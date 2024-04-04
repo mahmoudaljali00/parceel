@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lateef:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+      @apply bg-mcolr-0 py-2 px-4 rounded-lg inline-block tracking-wider font-semibold 
+      border border-mcolr-0 hover:bg-transparent hover:text-mcolr-0 
+      transition duration-300 cursor-pointer;
+    }
+  }
+  
+  @layer base {
+    .categorieSlider .swiper-button-prev,
+    .categorieSlider .swiper-button-next {
+      @apply bg-mcolr-0 text-white top-[50%] md:top-[50%] w-[46px] rounded-full z-20;
+    }
+  
+    .categorieSlider .swiper-button-prev::after,
+    .categorieSlider .swiper-button-next::after {
+      @apply text-lg;
+    }
+  }
